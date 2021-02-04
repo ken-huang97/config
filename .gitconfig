@@ -1,0 +1,35 @@
+[user]
+	name = Ken Huang
+	email = kenhuan@amazon.com
+[color]
+	ui = auto
+[core]
+	pager = less -FMRiX
+[push]
+	default = simple
+[alias]
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)%an <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+	s = status
+	st = stash
+	cm = commit -m
+	cmm = commit -m
+	l = log --pretty=format:'%C(yellow)%h %<(24)%C(red)%ad %<(18)%C(green)%an %C(reset)%s' --date=local --max-count=10
+	ll = log
+	cma = commit -am
+	cmammend = commit --amend --no-edit
+	cmaa = !git a . && git commit --amend --no-edit
+	cmam = commit -am
+	co = checkout
+	rb = rebase
+	a = add
+	d = diff
+	rl = reflog
+	rh = reset --hard
+	rbc = rebase --continue
+	rba = rebase --abort
+	sh = show
+	dc = diff --cached
+	shn = show --name-only
+	ai = add -i
+	pl = pull --rebase
+	br = branch
